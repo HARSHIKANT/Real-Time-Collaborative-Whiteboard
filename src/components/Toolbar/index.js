@@ -8,11 +8,11 @@ import boardContext from '../../store/board-context';
 
 
 function Toolbar() {
-    const { activeToolItem, handleToolItemClick } = useContext(boardContext)
+    const { activeToolItem, changeToolHandler } = useContext(boardContext)
   return (
     <div className={classes.container}> 
-        <div className={cx(classes.toolItem, {[classes.active]: activeToolItem === TOOL_ITEMS.LINE})} onClick={()=>handleToolItemClick("LINE")}><FaSlash/></div>
-        <div className={cx(classes.toolItem, {[classes.active]: activeToolItem === TOOL_ITEMS.RECTANGLE})} onClick={()=>handleToolItemClick("RECTANGLE")}><LuRectangleHorizontal/></div>
+        <div className={cx(classes.toolItem, {[classes.active]: activeToolItem === TOOL_ITEMS.LINE})} onClick={()=>changeToolHandler("LINE")}><FaSlash/></div>
+        <div className={cx(classes.toolItem, {[classes.active]: activeToolItem === TOOL_ITEMS.RECTANGLE})} onClick={()=>changeToolHandler("RECTANGLE")}><LuRectangleHorizontal/></div>
     </div>
   )
 }

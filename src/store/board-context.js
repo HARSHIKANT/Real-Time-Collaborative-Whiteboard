@@ -2,10 +2,12 @@ import { createContext } from "react";
 
 const boardContext = createContext({
     activeToolItem: "",
+    toolActionType: "",
     elements: [],
     boardMouseDownHandler: () => {},
     changeToolHandler: () => {},
-    boardMouseMoveHandler: () => {}
+    boardMouseMoveHandler: () => {},
+    boardMouseUpHandler: () => {},
 })
 
 export default boardContext;
