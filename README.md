@@ -1,4 +1,4 @@
-# 🖊️ Collaborative Whiteboard
+# 🖊️ Real-Time Collaborative Whiteboard | React.js | Express | Websocket
 
 A real‑time collaborative whiteboard application built with **React**, **Node.js**, and **WebSockets**. Users can draw, erase, add shapes, write text, and collaborate live with others.
 
